@@ -41,11 +41,8 @@ function receiveCustomTipPercentage() {
     let customTipInput = document.querySelector("#custom-tip")
     tipPercentage = customTipInput.valueAsNumber / 100
 
-    if (buttonSelected !== null) {
         buttonSelected.classList.remove("button-selected");
         buttonSelected = null;
-    }
-    calculate();
 }
 
 function calculate(){
@@ -64,4 +61,8 @@ function calculate(){
     }else{
         console.log("ainda não é possivel calcular")
     }
+}
+
+function reset(){
+    
 }
